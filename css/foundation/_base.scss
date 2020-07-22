@@ -1,0 +1,26 @@
+*{
+
+    box-sizing:border-box;
+	list-style: none;
+	
+}
+@mixin breakpoint( $point ) {
+	@if $point == sp {
+		@media ( min-width: 560px ) {
+			@content ;
+		}
+	}
+	@if $point == tablet{
+		@media ( min-width: 960px ) {
+			@content ;
+		}
+	}
+}
+
+// color指定
+$yellow:#d9cd2b;
+$blue_light:#2b62d9;
+$blue_deep:#2451b2;
+$white:#ffffff;
+$black:#111111;
+

@@ -1,0 +1,63 @@
+// .p-main_visual{
+//     background-image: url("../../image/main_haikei.png");
+//     background-blend-mode:lighten;
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     background-position:left;
+//     object-fit: cover;
+//     height:864px;
+//     & .mask {
+//         height: 100%;
+//         background: rgba($blue_deep,1);
+//     }
+// }
+
+.p-main_visual{
+    background-color: $blue_light;
+    height:864px;
+    position:relative;
+    & .mask {
+        height: 100%;
+        background-image: url("../../image/main_haikei.png");
+        background-repeat: no-repeat;
+        background-size: auto;
+        background-position: left;
+        opacity:0.26;
+    }
+}
+.p-worries{
+    background-color: $blue_deep;
+    height:2250px;
+    text-align: center;
+    position: relative;
+    &:after{
+        content: "";
+        position: absolute;
+        bottom: -62vw;
+        left:0;
+        width:0;
+        height:0;
+        border: 50vw solid transparent;
+        border-top: 12vw solid $blue_deep;
+    }
+}
+
+.p-cource_about_background{
+    background-image: url("../../image/white_haikei.png");
+    background-blend-mode:lighten;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:left;
+    object-fit: cover;
+    height:1500px;
+    position:relative;
+    z-index:-1;
+}
+.p-cource_about{
+    text-align: center;
+    background-color: red;
+    position: absolute;
+    top:120px;
+    margin:20px;
+    // padding:80px 20px;
+}

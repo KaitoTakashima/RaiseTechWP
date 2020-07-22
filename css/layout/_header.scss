@@ -1,0 +1,39 @@
+.l-header{
+    display:flex;
+   
+    height:80px;
+    & .logo{
+        width: 194px;
+        height:40px;
+        margin:20px;
+    }
+
+    & .hamburger_menu{
+        & .nav_toggle{
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 3rem;
+            height: 3rem;
+            z-index: 2;
+            & i{
+                display:block;
+                width:40px;
+                height:4px;
+                left:13px;
+                background-color:$blue_light;
+                position: absolute;
+                transition: transform .5s, opacity .5s;
+            }
+            & i:nth-child(1){
+                top:0px;
+            }
+            & i:nth-child(2){
+                top:15px;
+            }
+            & i:nth-child(3){
+                top:30px;
+            }
+        }
+    }
+}
